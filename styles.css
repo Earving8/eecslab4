@@ -1,0 +1,96 @@
+/*
+font-family: 'Open Sans', sans-serif;
+
+colors
+dark gray: #60646D
+red: #FF6766
+white: #FFFFF7
+light blue: #83D6DE
+light green: #97CE68
+
+*/
+
+
+/* Document CSS */
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #60646D;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #83D6DE;
+}
+
+h1,h2{
+    margin: 10px auto;
+}
+
+/* Navigation CSS */
+
+nav{
+    background-color: #FF6766;
+    padding: 0 20px;
+}
+
+.links{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.navlinks a:hover{
+    background-color: #83D6DE;
+    color: #000000;
+}
+
+.navlinks a{
+    color: #ffffff;
+    padding: 20px;
+    display: inline-block;
+}
+
+/* Body CSS */
+
+#wrapper{
+    width: 900px;
+    margin: 10px auto;
+    background-color: #FFFFF7;
+    padding: 20px;
+    min-height: calc(100% - 240px);
+}
+
+#bio{
+    text-align: center;
+}
+.section{
+    border-top: 1px solid #bfbfbf;
+}
+
+.project{
+    padding: 10px;
+    border-top: 1px dashed #dfdfdf;
+    border-bottom: 1px dashed #dfdfdf;
+}
+
+.project span{
+    display: block;
+    border-bottom: #000000 1px solid;
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+/* Footer CSS */
+footer{
+    background-color: #2e2f2f;
+    color: #FFFFF7;
+    padding: 50px 0;
+}
+
+footer a{
+    color: #FFFFF7;
+}
