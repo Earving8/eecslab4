@@ -30,10 +30,10 @@
         </div>
     </div><!-- end Wrapper -->
     <div class="shopForm">
-        <form onsubmit="return validate()">
+        <form action="customerBackend.php" method="post" onsubmit="return validate()">
             <h2>User Information:</h2>
             <label>Username:</label>
-            <input id="user" type="text" name="username" value="" placeholder="user@domain.com"><br>
+            <input id="user" type="text" name="user" value="" placeholder="user@domain.com"><br>
             <label>Password:</label>
             <input id="pass" type="password" name="pass" value="" placeholder="password"><br>
             <h2>Product Options:</h2>

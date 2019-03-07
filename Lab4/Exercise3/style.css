@@ -108,3 +108,23 @@ h1, h2{
     margin-bottom: 10px;
     margin-top: 20px;
 }
+
+/* PHP page CSS */
+
+.receiptScreen{
+    width: 900px;
+    margin: 20px auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.receipt{
+    margin: 20px auto;
+    text-align: left;
+}
+
+.receipt td, .receipt th{
+    padding: 5px 20px;
+    border: #dddddd 1px solid;
+}
+
