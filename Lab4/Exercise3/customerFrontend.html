@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>CircleDot</title>
+</head>
+<body>
+    <div class="header">
+        <h1>CircleDot</h1>
+    </div>
+    <div class="product">
+        <h1>Tire</h1>
+        <img src="Assets/tire.jpg">
+    </div>
+    <div class="product">
+        <h1>Frisbee</h1>
+        <img src="Assets/frisbee.jpg">
+    </div>
+    <div class="product">
+        <h1>Donut</h1>
+        <img src="Assets/donut.jpg">
+    </div>
+    <div class="shopForm">
+        <form onsubmit="validate()">
+            Username:
+            <input type="text" name="username" value=""><br>
+            Password:
+            <input type="password" name="pass" value=""><br>
+            Tire Amount:
+            <input type="text" name="tireAmt" value="0"><br>
+            Frisbee Amount:
+            <input type="text" name="frisbeeAmt" value="0"><br>
+            Donut Amount: 
+            <input type="text" name="donutAmt" value="0"><br>
+            <h2>Shipping Options:</h2>
+            <input type="radio" name="shipping" value="sevenDay"> 7 day shipping (Free)<br>
+            <input type="radio" name="shipping" value="oneDay"> over night shipping ($50.00)<br>
+            <input type="radio" name="shipping" value="threeDay"> three day shipping ($5.00)<br>
+            <input type="submit" value="Purchase">
+            <input type="reset">
+        </form>
+    </div>
+</body>
+</html>
