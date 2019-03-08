@@ -6,10 +6,10 @@ $famt = $_POST["frisbeeAmt"];
 $damt = $_POST["donutAmt"];
 $shipping = $_POST["shipping"];
 if($shipping == "oneDay"){
-    $costShipping = 50;
+    $costShipping = 50.00;
     $shipping = "Overnight Shipping";
 }else if($shipping == "threeDay"){
-    $costShipping = 5;
+    $costShipping = 5.00;
     $shipping = "Three Day Shipping";
 }else{
     $costShipping = 0;
@@ -18,7 +18,7 @@ if($shipping == "oneDay"){
 $costTire = $tamt * 129.99;
 $costFrisbee = $famt * 12.99;
 $costDonut= $damt * 1.29;
-$cost =  $costTire + $costFrisbee + $costDonut;
+$cost =  $costTire + $costFrisbee + $costDonut + $costShipping;
 
 
 echo  "<link href='style.css' rel='stylesheet' type='text/css'> <div class='ReceiptScreen'>Welcome, $user<br> Your password is, $pass
