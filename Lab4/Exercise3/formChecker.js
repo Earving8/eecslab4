@@ -24,7 +24,11 @@ function validate() {
     let damtCheck = amtValidation(damt);
     
     //checks if at least one product is selected
-    let validProduct = atLeastOneProduct(tamt, famt, damt);
+    if(tamtCheck && famtCheck && damtCheck){
+        let validProduct = atLeastOneProduct(tamt, famt, damt);   
+    }else{
+        let validProduct = false;
+    }
     
     //returns true if all inputs are valid
     return (userCheck && passCheck && tamtCheck && famtCheck && damtCheck && validProduct);
@@ -48,9 +52,9 @@ function userValidation(user){
     return true;
 }
 
-//function checks that a valid number is inserted and is positive
+//function checks that a valid integer is inserted and is positive
 function amtValidation(amt){
-    if(isNaN(amt.value) || amt.value < 0){
+    if(isNaN(amt.value) || amt.value < 0 || amt.value % 1 != 0){
        invalidField(amt);
         return false;
     }
@@ -70,8 +74,7 @@ function invalidField(field){
 
 //makes sure that at least one product is being purchased
 function atLeastOneProduct(a,b,c){
-    let amountOfProducts= a.value+b.value+c.value;
-    console.log(amountOfProducts);
+    let amountOfProducts= parseInt(a.value,10)+parseInt(b.value,10)+parseInt(c.value,10);
     if(amountOfProducts < 1){
         invalidField(a);
         invalidField(b);
