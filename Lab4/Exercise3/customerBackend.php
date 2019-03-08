@@ -21,7 +21,7 @@ $costDonut= $damt * 1.29;
 $cost =  $costTire + $costFrisbee + $costDonut + $costShipping;
 
 
-echo  "<link href='style.css' rel='stylesheet' type='text/css'> <div class='ReceiptScreen'>Welcome, $user<br> Your password is, $pass
+echo  "<link href='style.css' rel='stylesheet' type='text/css'> <div class='ReceiptScreen'>Welcome, $user<br> Your password is: $pass
 <table class='receipt'>
     <tr>
         <th></th>

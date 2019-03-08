@@ -30,6 +30,7 @@ function validate() {
     return (userCheck && passCheck && tamtCheck && famtCheck && damtCheck && validProduct);
 }
 
+//function checks that the password field is not blank
 function passValidation(pass){
     if(pass.value == ""){
         invalidField(pass);
@@ -38,17 +39,16 @@ function passValidation(pass){
     return true;
 }
 
+//function checks the username is not blank and of email form
 function userValidation(user){
-    if(user.value == ""){
-        invalidField(user);
-        return false;
-    }else if(!(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(user.value))){
+    if(user.value == "" || !(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(user.value))){
         invalidField(user);
         return false;
     }
     return true;
 }
 
+//function checks that a valid number is inserted and is positive
 function amtValidation(amt){
     if(isNaN(amt.value) || amt.value < 0){
        invalidField(amt);
@@ -57,17 +57,18 @@ function amtValidation(amt){
     return true;
 }
 
-
+//sets border to none
 function clearBorder(formBox){
     formBox.style.border = "none";
 }
 
 
-
+//sets the border to red
 function invalidField(field){
     field.style.border = "red 1px solid";
 }
 
+//makes sure that at least one product is being purchased
 function atLeastOneProduct(a,b,c){
     let amountOfProducts= a.value+b.value+c.value;
     console.log(amountOfProducts);
