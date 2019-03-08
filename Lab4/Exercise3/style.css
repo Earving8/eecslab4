@@ -105,6 +105,11 @@ h1, h2{
     padding: 20px;
     width: 140px;
     margin:  30px 3px 10px 3px;
+    cursor: pointer;
+}
+
+.shopForm input[type="submit"]:hover, .shopForm input[type="reset"]:hover{
+    background-color: orange;
 }
 
 .shopForm h2{
